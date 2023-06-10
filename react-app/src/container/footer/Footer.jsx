@@ -4,9 +4,9 @@ import './footer.css'
 
 const Footer = () => {
   return (
-  <div className="game__footer section__padding">
+  <div className="game__footer section__padding" id="footer">
     <div className="game__footer-heading">
-      <h1 className="gradient__text">Do you want to step in to the future before others</h1>
+      <h1 className="gradient__text">Interested In Becoming A Playtester, Click Below!</h1>
     </div>
 
     <div className="game__footer-btn">
@@ -20,7 +20,7 @@ const Footer = () => {
       </div>
       <div className="game__footer-links_div">
         <h4>Links</h4>
-        <p>Overons</p>
+        <p>Discord</p>
         <p>Social Media</p>
         <p>Counters</p>
         <p>Contact</p>
@@ -40,7 +40,7 @@ const Footer = () => {
     </div>
 
     <div className="game__footer-copyright">
-      <p>@2021 GPT-3. All rights reserved.</p>
+      <p>@2023 R34. All rights reserved.</p>
     </div>
   </div>
   )

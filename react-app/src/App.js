@@ -17,7 +17,6 @@ const App = () => {
       <Brand />
       <Features />
       <GameWindow />
-      <CTA />
       <Footer />
     </div>
   )
