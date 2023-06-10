@@ -109,7 +109,8 @@
 }
 
 .game__header-image img {
-    width: 100%;
+    transform: matrix(1, 0.25, 0.05, 1, 0, 0);
+    width: 35%;
     height: 100%;
 }
 

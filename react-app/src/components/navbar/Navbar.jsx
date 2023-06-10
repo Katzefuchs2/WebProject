@@ -6,9 +6,9 @@ import './navbar.css'
 const Menu = () => (
   <>
     <p><a href='#home'> Home </a></p>
-    <p><a href='#htp'> How to play? </a></p>
-    <p><a href='#wrule34'> What is Rule34? </a></p>
-    <p><a href='#faq'> FAQ </a></p>
+    <p><a href='#features'> Features </a></p>
+    <p><a href='#wgame'> The Game </a></p>
+    <p><a href='#footer'> FAQ </a></p>
   </>
 )
 
