@@ -22,7 +22,7 @@ if ($mysqli->connect_error) {
 }
 
 // SQL query to select data from database
-$sql = " SELECT * FROM users";
+$sql = " SELECT * FROM posts";
 $result = $mysqli->query($sql);
 $mysqli->close();
 ?>
@@ -71,13 +71,14 @@ $mysqli->close();
 <body>
     <section>
         <h1>ADMIN PAGE</h1>
+        <h2>Posts</h2>
         <!-- TABLE CONSTRUCTION -->
         <table>
             <tr>
-                <th>GFG UserHandle</th>
-                <th>Practice Problems</th>
-                <th>Coding Score</th>
-                <th>GFG Articles</th>
+                <th>Title</th>
+                <th>Content</th>
+                <th>ID</th>
+                <th>Action</th>
             </tr>
             <!-- PHP CODE TO FETCH DATA FROM ROWS -->
             <?php
@@ -88,7 +89,13 @@ $mysqli->close();
             <tr>
                 <!-- FETCHING DATA FROM EACH
                     ROW OF EVERY COLUMN -->
-                <td><?php echo $rows['username'];?></td>
+                <td><?php echo $rows['title'];?></td>
+                <td><?php echo $rows['content'];?></td>
+                <td> <form action="delete.php" method="post">
+                <input type="number" name="title" id="title" value = <?php echo $rows['id'];?> readonly="readonly">
+                <td><input type="submit" value="Delete"> </td>
+
+                </form> </td>
 
             </tr>
             <?php
@@ -96,6 +103,24 @@ $mysqli->close();
             ?>
         </table>
     </section>
+    <form action="submit.php" method="post">
+  <h2>Add Post</h2>
+  <table>
+    <tr>
+      <td>Title:</td>
+      <td><input type="text" name="title" id="title" ></td>
+    </tr>
+    <tr>
+      <td>Content:</td>
+      <td><textarea name="content" cols="40" rows="5" id="content"></textarea></td>
+    </tr>
+    <tr>
+      <td><input name="submitBtn" type="submit" id="submitBtn"
+value="Submit"></td>
+    </tr>
+  </table>
+</form>
+<td> <button type="button">Exit</button> </td>
 </body>
 
 </html>
