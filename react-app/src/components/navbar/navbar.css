@@ -18,8 +18,8 @@
 }
 
 .game__navbar-links_logo img{
-    width: 62.5px;
-    height: 16px;
+    width: 100px;
+    height: 100px;
 }
 
 .game__navbar-links_container{
@@ -64,18 +64,18 @@
 
 /* PASTED */
 
-.gpt3__navbar-menu {
+.game__navbar-menu {
     margin-left: 1rem;
 
     display: none;
     position: relative;
 }
 
-.gpt3__navbar-menu svg {
+.game__navbar-menu svg {
     cursor: pointer;
 }
 
-.gpt3__navbar-menu_container {
+.game__navbar-menu_container {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -93,44 +93,44 @@
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
-.gpt3__navbar-menu_container p {
+.game__navbar-menu_container p {
     margin: 1rem 0;
 }
 
-.gpt3__navbar-menu_container-links-sign {
+.game__navbar-menu_container-links-sign {
     display: none;
 }
 
 @media screen and (max-width: 1050px) {
-    .gpt3__navbar-links_container {
+    .game__navbar-links_container {
         display: none;
     }
 
-    .gpt3__navbar-menu {
+    .game__navbar-menu {
         display: flex;
     }
 }
 
 @media screen and (max-width: 700px) {
-    .gpt3__navbar {
+    .game__navbar {
         padding: 2rem 4rem;
     }
 }
 
 @media screen and (max-width: 550px) {
-    .gpt3__navbar {
+    .game__navbar {
         padding: 2rem;
     }
 
-    .gpt3__navbar-sign {
+    .game__navbar-sign {
         display: none;
     }
 
-    .gpt3__navbar-menu_container {
+    .game__navbar-menu_container {
         top: 20px;
     }
 
-    .gpt3__navbar-menu_container-links-sign {
+    .game__navbar-menu_container-links-sign {
         display: block;
     }
 }
