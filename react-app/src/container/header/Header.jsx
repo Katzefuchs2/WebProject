@@ -7,12 +7,12 @@ const Header = () => {
   return (
   <div className="game__header section__padding" id="home">
     <div className="game__header-content">
-      <h1 className="gradient__text">Let&apos;s Play A Fun Satire Game</h1>
-      <p>An exotic drinking game revolved around guessing the popularity of online porn tags!</p>
+      <h1 className="gradient__text">R34, A Fun Drinking Game</h1>
+      <p>An drinking game revolved around guessing the popularity of online tags!</p>
 
       <div className="game__header-content__input">
         <input type="email" placeholder="Your Email Address" />
-        <button type="button">Get Started</button>
+          <button type="button" onClick={() => window.location.href = 'Backend/login.php'}>Get Started</button>
       </div>
 
       <div className="game__header-content__people">

@@ -2,8 +2,8 @@ import React from 'react'
 
 import './app.css'
 
-import { Blog, Features, Footer, GameWindow, Header, Possibility } from './container';
-import { Article, Brand, CTA, Feature, Navbar } from './components';
+import { Features, Footer, GameWindow, Header } from './container';
+import { Brand, Navbar } from './components';
 
 
 const App = () => {

@@ -3,6 +3,7 @@ import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import logo from '../../assets/Rule34Logo.png'
 import './navbar.css'
 
+
 const Menu = () => (
   <>
     <p><a href='#home'> Home </a></p>
@@ -29,7 +30,7 @@ const Navbar = () => {
 
       <div className='game__navbar-sign'>
         <p>Sign in</p>
-        <button type='button'>Sign up</button>
+        <button type='button' onClick={() => window.location.href = 'Backend/login.php'}>Sign up</button>
       </div>
       <div className="game__navbar-menu">
         {toggleMenu
@@ -40,9 +41,9 @@ const Navbar = () => {
           <div className="game__navbar-menu_container-links">
             <Menu />
           </div>
-          <div className="game__navbar-menu_container-links-sign">
+          <div className="game__navbar-menu_container-links-sign" >
             <p>Sign in</p>
-            <button type="button">Sign up</button>
+            <button type="button" onClick={() => window.location.href = 'Backend/login.php'}>Sign up</button>
           </div>
         </div>
         )}
