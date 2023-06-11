@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d01b235a.css",
+    "main.js": "/static/js/main.85758390.js",
+    "static/media/R34GamePage.png": "/static/media/R34GamePage.a018e966511143f13684.png",
+    "static/media/Rule34Logo.png": "/static/media/Rule34Logo.560dc4f4e7f3f9d87585.png",
+    "static/media/people.png": "/static/media/people.5cd2d6fbcd48bd63f106.png",
+    "index.html": "/index.html",
+    "main.d01b235a.css.map": "/static/css/main.d01b235a.css.map",
+    "main.85758390.js.map": "/static/js/main.85758390.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d01b235a.css",
+    "static/js/main.85758390.js"
+  ]
+}
